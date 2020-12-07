@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/f0b77c8376.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="assets/CSS/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        <b>Fill your credit card details</b>
+        <i class="fas fa-credit-card user-icon"></i>
+      </p>
+
+      <div class="wraper">
+        <form id="card" class="card">
+          <div class="form-group inputWhithIcon">
+            <input
+              type="text"
+              class="form-control"
+              name="cardNumber"
+              id="cardNumber"
+              placeholder="Card Number"
+              required
+              maxlength="19"
+            />
+            <i
+              class="fal fa-credit-card-front card-unknown plastic-card"
+              aria-hidden="true"
+            ></i>
+            <i
+              class="fab fa-cc-visa card-visa plastic-card"
+              aria-hidden="true"
+            ></i>
+            <i
+              class="fab fa-cc-mastercard card-mastercard plastic-card"
+              aria-hidden="true"
+            ></i>
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              name="fullName"
+              id="fullName"
+              placeholder="Card owner’s full name "
+              required
+              maxlength="100"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              name="cvc"
+              id="cvc"
+              placeholder="Card CVC "
+              required
+              maxlength="4"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="date"
+              class="form-control"
+              name="expirationDate"
+              id="expirationDate"
+              placeholder="Card expiration date  dd/mm/yyyy"
+              required
+            />
+          </div>
+          <div class="btnWrap">
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-info btn-lg btnPrevious"
+                value="Previous"
+                onclick="back()"
+                id="previous"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-info btn-lg btnNext"
+                value="Next"
+                id="next"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="assets/js/card.js"></script>
+  </body>
+</html>

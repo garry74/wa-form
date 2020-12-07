@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/f0b77c8376.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <p><b>Tell us who are you</b> <i class="fad fa-user user-icon"></i></p>
+
+      <div class="wraper">
+        <form id="register" class="register">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              name="firstName"
+              id="firstName"
+              placeholder="First name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              name="lastName"
+              id="lastName"
+              placeholder="Last name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <select
+              class="form-control"
+              name="country"
+              id="country"
+              placeholder="Choose your country"
+              required
+              onchange="changeCountry()"
+            >
+              <option value disabled selected>Choose your country</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              name="city"
+              id="city"
+              placeholder="City"
+              required
+              onkeyup="changeCity()"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              name="address"
+              id="address"
+              placeholder="Address"
+              required
+              onkeyup="changeAddress()"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="number"
+              class="form-control"
+              name="postalCode"
+              id="postalCode"
+              placeholder="Postal Code"
+              required
+              onkeyup="changeCode()"
+            />
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="shipping"
+              onclick="ifChecked()"
+            />
+            <label class="form-check-label" for="shipping"
+              >Use filled data for shipping</label
+            >
+          </div>
+          <div class="form-group">
+            <select
+              class="form-control"
+              name="chooseShipping"
+              id="chooseShipping"
+              placeholder="Choose your country"
+              required
+            >
+              <option value disabled selected>Choose shipping country</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              name="shippingCity"
+              id="shippingCity"
+              placeholder="Shipping City"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              name="shippingAddress"
+              id="shippingAddress"
+              placeholder="Shipping Address"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="number"
+              class="form-control"
+              name="shippingPostalCode"
+              id="shippingPostalCode"
+              placeholder="Shipping Postal Code"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="button"
+              class="btn btn-info btn-lg btnNext"
+              value="Next"
+              id="next"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+  </body>
+</html>

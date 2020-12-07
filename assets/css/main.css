@@ -1,0 +1,59 @@
+body {
+  margin-top: 25px;
+}
+
+.btnNext {
+  width: 104px;
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.wraper {
+  background: rgb(240, 234, 234);
+  margin-top: 60px;
+  padding: 40px 60px 10px;
+  border-radius: 25px;
+  border: 2px solid rgba(94, 92, 92, 0.295);
+}
+
+div > p > b {
+  font-size: 22px;
+  margin-top: 40px;
+  color: blue;
+}
+.user-icon {
+  font-size: 50px;
+  margin-left: 95%;
+  color: rgb(240, 234, 234);
+}
+.btnWrap {
+  display: flex;
+  margin-top: 20px;
+}
+
+.inputWhithIcon {
+  position: relative;
+}
+.inputWhithIcon i {
+  position: absolute;
+  color: #00a2ffec;
+  padding-left: 7px;
+  top: 4px;
+  font-size: 28px;
+  right: 10px;
+}
+.form-group.success input {
+  border-color: green;
+}
+.form-group.success select {
+  border-color: green;
+}
+.form-group.error input {
+  border-color: rgb(243, 14, 33);
+}
+.form-group.error select {
+  border-color: rgb(243, 14, 33);
+}
+label {
+  color: blue;
+}
